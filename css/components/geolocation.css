@@ -1,0 +1,15 @@
+.geolocation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather-box {
+    display: flex;
+    justify-content: center;
+}
+
+.weather,
+.temp,
+.loc {
+    color: white;
+}

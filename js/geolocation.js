@@ -1,4 +1,4 @@
-const LOCATION = document.querySelector(".location");
+const LOCATION = document.querySelector(".geolocation");
 const API_KEY = "e49309bfb8d1d669d3438afb9dde5394";
 
 function geoSuccess(position) {
@@ -10,7 +10,9 @@ function geoSuccess(position) {
         const CITY = data.name;
         const WEATHER = data.weather[0].main;
         const TEMPERATURE = Math.floor(data.main.temp);
-        LOCATION.innerText = `${CITY} ${WEATHER} ${TEMPERATURE}°C`;});
+        LOCATION.querySelector(".weather").innerText = `${WEATHER}`;
+        LOCATION.querySelector(".temp").innerText = `${TEMPERATURE}°C`;
+        LOCATION.querySelector(".loc").innerText = `${CITY}`;});
     }
     CWT();
     setInterval(CWT, 60000);

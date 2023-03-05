@@ -10,9 +10,6 @@ const images = [
     "8.jpg"
 ]
 
-const BODY = document.querySelector("body");
-function randomBackground() {
-    const BGI = images[Math.floor(Math.random() * images.length)];
-}
-
-randomBackground();
+const BGI = document.querySelector(".bgi");
+const radomBgi = images[Math.floor(Math.random() * images.length)];
+BGI.src = `jpg/${radomBgi}`;

@@ -17,4 +17,5 @@ function geoError() {
     LOCATION.innerText = `Error`;
 }
 
+navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
 setInterval(navigator.geolocation.getCurrentPosition(geoSuccess, geoError), 60000);

@@ -9,7 +9,7 @@ function geoSuccess(position) {
         console.log(data);
         const CITY = data.name;
         const WEATHER = data.weather[0].main;
-        const TEMPERATURE = data.main.temp;
+        const TEMPERATURE = Math.floor(data.main.temp);
         LOCATION.innerText = `${CITY} ${WEATHER} ${TEMPERATURE}°C`;});
     }
     CWT();

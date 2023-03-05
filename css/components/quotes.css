@@ -1,0 +1,17 @@
+.random-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    color: white;
+    font-size: 30pt;
+}
+
+.author {
+    margin-top: 20px;
+    color: white;
+    font-size: 15pt;
+}
